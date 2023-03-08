@@ -438,9 +438,26 @@ Se o commit estiver com o problema, então ele deverá ser marcado como **ruim**
  
 ##### Finalizar a pesquisa binária
 Depois de encontrar o commit com problema, para retornar para o *HEAD* utilize:
-	
-	git bisect reset
+
+# Estudos 
+git bisect reset
  	
+git commit -m "Teste"
+Faz o commit apenas dos arquivos modificados e que encontram-se adicionados na área de stage (Changes to be committed) do Git. Ou seja, trata-se apenas dos arquivos que você adicionou usando um comando como este:
+
+git add nome_arquivo.txt
+Ou este:
+
+git add .
+Já o comando:
+
+git commit -am "Teste"
+Faz duas coisas: adiciona todos os arquivos modificados na área de stage e, em seguida, faz o commit dos mesmos. Em termos de comando, é o mesmo que você fizesse estes dois comandos abaixo:
+
+git add .               # adiciona todos os arquivos modificados no stage
+git commit -m "Teste"   # faz o commit dos arquivos modificados
+	
+
 
 # Contribuições
 
